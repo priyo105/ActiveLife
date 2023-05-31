@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View,SafeAreaView,ScrollView} from 'react-native'
+import {Button, StyleSheet, Text, View,SafeAreaView,ScrollView} from 'react-native'
 import React from 'react'
 import HomeScreenData from '../components/HomeScreenData'
 import WorkoutCard from '../components/WorkoutCard'
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <View>
                    <ScrollView style={{marginTop:5}}>
@@ -14,7 +14,7 @@ const HomeScreen = () => {
                                     <HomeScreenData  calories={10} excercise={1} minutes={3}   />
                                 </View> 
                           <View style={{marginTop:40}}>        
-                           <WorkoutCard />
+                           <WorkoutCard navigation={navigation} />
                            </View>
             </ScrollView>
       

@@ -2,8 +2,8 @@ export default [
     {
       id: "0",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEM-6gDUO7g1cdrNhBaqk_0nwxy6ILlIqsQ&usqp=CAU",
-      name: "FULL BODY",
+        "https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      name: "Full Body Workout",
       description: "7x4 CHALLENGE",
       excersises: [
         {
@@ -48,8 +48,8 @@ export default [
     {
       id: "1",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRonpSjpGQ2-JD8-XFFD7LYsVSFCOiASj0wSOq1qxNvxGFHe7W6AU1LRAeJ2fOIzYICMGc&usqp=CAU",
-      name: "ABS BEGINNER",
+        "https://images.unsplash.com/photo-1614396648745-d5de9c9e037e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      name: "Abs Workout",
       description: "7x4 CHALLENGE",
       excersises : [
         {
@@ -87,8 +87,8 @@ export default [
     {
       id: "2",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NHvoutGn-Vr_uwVbOOtezhENvx9jhV6pfQ&usqp=CAU",
-      name: "ARM BEGINNER",
+        "https://images.unsplash.com/photo-1532384555668-bc0c32a17ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      name: "Bicep-Tricep Building Workout",
       description: "7x4 CHALLENGE",
       excersises:[
         {
@@ -140,7 +140,7 @@ export default [
       id: "3",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCT0tewpNAZ6R9JUoMDHIHGnpE44U2Fl1Zw&usqp=CAU",
-      name: "CHEST BEGINNER",
+      name: "Chest and Shoulder Workouts",
       description: "7x4 CHALLENGE",
       excersises: [
         {

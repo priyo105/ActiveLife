@@ -12,20 +12,24 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import HomeScreen from './views/HomeScreen';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import WorkoutView from './views/WorkoutView';
+
+const Stack = createNativeStackNavigator();
+
+
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <View>
-       
-       <HomeScreen />
+      <NavigationContainer>
+       <Stack.Navigator>
 
-    </View>
+          <Stack.Screen options={{headerShown: false}}  name="Home" component={HomeScreen} />
+          <Stack.Screen options={{headerShown: false}} name="WorkoutView" component={WorkoutView} />
+
+       </Stack.Navigator>
+      </NavigationContainer>
   );
 }
 

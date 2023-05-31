@@ -42,10 +42,6 @@ export default function HomeScreenData({calories,excercise,minutes}) {
   />
 
 </View>
-
-
-
-
     </View>
   )
 }
