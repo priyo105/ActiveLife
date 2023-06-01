@@ -14,7 +14,9 @@ const RenderFitnessCards= ()=>{
               <View style={{height:140,width:'90%',marginTop:20,marginLeft:20,justifyContent:"center"}}> 
 
                 <TouchableOpacity onPress={()=>{
-                  navigation.navigate("WorkoutView")
+                  navigation.navigate("WorkoutView",{
+                    data: data
+                  })
           }}>
                   <Image
                   style={styles.imageStyle}
