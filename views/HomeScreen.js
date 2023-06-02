@@ -6,17 +6,17 @@ import WorkoutCard from '../components/WorkoutCard'
 const HomeScreen = ({navigation}) => {
   return (
     <View>
-                   <ScrollView style={{marginTop:5}}>
+        <ScrollView style={{marginTop:5}}>
 
-                                <View style={styles.topContainer}>
-                                    <Text style={styles.boldText}>ActiveLife</Text> 
-
-                                    <HomeScreenData  calories={10} excercise={1} minutes={3}   />
-                                </View> 
-                          <View style={{marginTop:40}}>        
-                           <WorkoutCard navigation={navigation} />
-                           </View>
-            </ScrollView>
+          <View style={styles.topContainer}>
+              <Text style={styles.boldText}>ActiveLife</Text> 
+              <HomeScreenData  calories={10} excercise={1} minutes={3}   />
+          </View> 
+                            
+          <View style={{marginTop:40}}>        
+               <WorkoutCard navigation={navigation} />
+          </View>
+        </ScrollView>
       
     </View>
   )

@@ -3,15 +3,17 @@ import React from 'react'
 import { useRoute } from '@react-navigation/native'
 import ExcercisesCard from '../components/ExcercisesListCard'
 import CustomButton from '../components/CustomButton'
-
+import { useNavigation } from '@react-navigation/native'
 export default function WorkoutView() {
     
   const route= useRoute()
   const data= route.params.data;
+  const navigation=useNavigation()
   console.log(data) // getting data from previous screen 
 
   return (
     <View>
+
         <ScrollView style={{marginBottom:40}}>
             <Text style={styles.boldText}>{data.name}</Text>
             <Image
@@ -20,21 +22,28 @@ export default function WorkoutView() {
 
             {
                 data.excersises.map(exc=>{
-            return(
-                <View>
-                    <ExcercisesCard excercises={exc} />
-                </View>  
-            )
+                    return (
+                        <View>
+                            <ExcercisesCard excercises={exc} />
+                        </View>
+                          )
                 })
             }
-
         </ScrollView>
+
+        {/* Floating Button */}
         <View style={{ position:'absolute',bottom:0,left:0,bottom:10,width:'100%'}}>
             <View style={{alignContent:'center',justifyContent:'center',alignItems:'center',backgroundColor:'#f5f5f5',height:60}}>
-            <CustomButton color={'black'} textcolor={'white'}></CustomButton>
-
+            <CustomButton 
+               color={'#260a0a'} 
+               textcolor={'white'}
+               title={'Start'}
+               onPress={()=>{navigation.navigate('ExcerciseDetailCard',{
+                excercises:data.excersises
+               })}} />
             </View>
         </View>
+
     </View>
     
   )

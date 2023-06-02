@@ -23,6 +23,9 @@ const ExcercisesCard = (excercises) => {
 
 export default ExcercisesCard
 
+
+
+
 const styles = StyleSheet.create({
 
   topContainer:{
